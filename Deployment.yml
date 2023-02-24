@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: sample_app
+spec:
+   replicas: 2
+   selector:   
+    matchLabels:
+     app: sample_app
+   template:
+      metadata:
+        labels:
+          app: sample_app
+      spec:
+       containers:
+        - name: sample_app
+          image: erj56/pipe
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
