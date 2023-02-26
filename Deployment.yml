@@ -13,8 +13,8 @@ spec:
           app: sampleapp
       spec:
        containers:
-        - name: sampleapp
-          image: erj56/pipe
+        - name: node1
+          image: erj56/pipe:latest
           imagePullPolicy: Always
           ports:
-          - containerPort: 80
+          - containerPort: 3000
