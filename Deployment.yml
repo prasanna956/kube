@@ -1,5 +1,5 @@
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
    name: sampleapp
 spec:
@@ -13,8 +13,8 @@ spec:
           app: sampleapp
       spec:
        containers:
-        - name: node1
-          image: erj56/pipe:latest
+        - name: con1
+          image: "erj56/pipe:latest"
           imagePullPolicy: Always
           ports:
           - containerPort: 3000
