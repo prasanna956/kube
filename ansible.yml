@@ -1,6 +1,5 @@
 - hosts: all
-  become: yes
-  become_user: ubuntu
+  become: true
   tasks: 
      - name: create new deployment
        command: kubectl apply -f /home/ubuntu/Deployment.yml
