@@ -14,7 +14,7 @@ spec:
       spec:
        containers:
         - name: con1
-          image: "erj56/pipe:latest"
+          image: "erj56/k8_web:latest"
           imagePullPolicy: Always
           ports:
           - containerPort: 80
